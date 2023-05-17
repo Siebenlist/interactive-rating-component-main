@@ -5,7 +5,7 @@ const rated = document.getElementById('output');
 const validation = document.getElementById('validation');
 const btn = document.getElementById('submit');
 
-//Displays thank you card after submitting rating
+//Checks if a number has been selected and displays a thank you card.
 btn.addEventListener("click", () => {
 
   if (rated.innerHTML == 0) {
@@ -16,7 +16,7 @@ btn.addEventListener("click", () => {
   }
 })
 
-//Outputs the rating in the thank you card
+//Outputs the rating in the thank you card.
 rates.forEach((rate) => {
   rate.addEventListener('click', () => {
     rated.innerHTML = rate.innerHTML;
