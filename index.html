@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="./dist/output.css" rel="stylesheet">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-[#121417]">
+
+  <!-- Rating state start -->
+<div class="flex flex-col gap-7 rounded-xl w-[400px] bg-gradient-to-b from-[#252d37] to-[#18191b] px-7 py-7 m-auto text-white" id="rating">
+    <div class="flex w-[40px] h-[40px] bg-gray-700 rounded-full">
+      <img class="w-[15px] h-[15px] m-auto" src="./images/icon-star.svg" alt="Logo Star">
+    </div>
+  
+    <h1 class="text-2xl font-bold">How did we do?</h1>
+  
+    <p class="text-[#959eac]">
+      Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
+  
+    <form class="flex justify-between" id="rating">
+        <label class="inline-block w-[50px] h-[50px] bg-[#252d37] leading-[50px] rounded-full text-center text-[#959eac] cursor-pointer hover:bg-slate-500 hover:font-bold hover:text-white active:bg-[#fb7413] select-none">1</label>
+      
+        <label class="inline-block w-[50px] h-[50px] bg-[#252d37] leading-[50px] rounded-full text-center text-[#959eac] cursor-pointer hover:bg-slate-500 hover:font-bold hover:text-white active:bg-[#fb7413] select-none">2</label>
+
+        <label class="inline-block w-[50px] h-[50px] bg-[#252d37] leading-[50px] rounded-full text-center text-[#959eac] cursor-pointer hover:bg-slate-500 hover:font-bold hover:text-white active:bg-[#fb7413] select-none">3</label>
+      
+        <label class="inline-block w-[50px] h-[50px] bg-[#252d37] leading-[50px] rounded-full text-center text-[#959eac] cursor-pointer hover:bg-slate-500 hover:font-bold hover:text-white active:bg-[#fb7413] select-none">4</label>
+      
+        <label class="inline-block w-[50px] h-[50px] bg-[#252d37] leading-[50px] rounded-full text-center text-[#959eac] cursor-pointer hover:bg-slate-500 hover:font-bold hover:text-white active:bg-[#fb7413] select-none">5</label>
+    </form>
+
+    <p class="hidden text-red-500 font-bold text-sm" id="validation">Please select a number.</p>
+  
+    <button id="submit" class="bg-[#fb7413] w-full h-[50px] rounded-full font-bold" type="submit">Submit</button>
+</div>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <div class="hidden flex-col gap-7 rounded-xl w-[400px] bg-gradient-to-b from-[#252d37] to-[#18191b] px-7 pt-10 pb-12 m-auto text-white text-center items-center" id="thank-you">
+    <div class="">
+      <img src="./images/illustration-thank-you.svg" alt="">
+    </div>
+    
+    <p class="text-[#fb7413] bg-gray-700 rounded-full px-10 h-[35px] leading-[35px] font-bold">You selected <span id="output">0</span> out of 5</p>
+  
+    <h2 class="text-2xl font-bold">Thank you!</h2>
+  
+    <p class="text-[#959eac]">
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!
+    </p>
+  </div>
+
+  <!-- Thank you state end -->
+
+  <script src="./index.js">
+
+  </script>
+</body>
+</html>
